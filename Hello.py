@@ -37,7 +37,7 @@ df['Moc obliczeniowa'] = df['Spalone KCS'].apply(lambda x: user_input_values[x])
 df['Wzrost mocy obliczeniowej'] = df['Moc obliczeniowa'].diff().fillna(0)
 
 # Display the DataFrame
-st.write(df)
+# st.write(df)
 
 # Generate a plot
 fig, ax = plt.subplots(figsize=(10, 6))
