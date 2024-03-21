@@ -9,6 +9,9 @@ plt.style.use('dark_background')
 # Tytuł aplikacji
 st.title('Generator mocy obliczeniowej KCS')
 
+# Dodajemy komentarz
+st.markdown("Wartości mocy są przykładowe. Wpisz swoje ze strony Burningdropa: 0 dla podstawy, i wszystkie kolejne.")
+
 # Prepare initial data as lists ensuring they are the same length
 spalone_kcs = [0, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6, 3.8, 4, 4.2, 4.4, 4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2]
 moc_obliczeniowa = [4648.50, 4868.44, 4917.99, 4974.34, 5038.40, 5111.02, 5192.74, 5283.63, 5382.95, 5488.93, 5598.80, 5709.09, 5816.25, 5917.29, 6010.21, 6094.06, 6168.73, 6234.69, 6292.74, 6343.76, 6388.66, 6428.28, 6463.35, 6494.51, 6522.31, 6547.22]
