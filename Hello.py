@@ -7,10 +7,7 @@ import matplotlib.pyplot as plt
 plt.style.use('dark_background')
 
 # Tytuł aplikacji
-st.title('Kalkulator opłacalności spalania KCS')
-
-# Dodajemy komentarz
-st.markdown("Obecne wartości mocy są przykładowe. Wpisz swoje ze strony Burningdropa: 0 dla podstawy, i wszystkie kolejne.")
+st.title('Generator mocy obliczeniowej KCS')
 
 # Prepare initial data as lists ensuring they are the same length
 spalone_kcs = [0, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6, 3.8, 4, 4.2, 4.4, 4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2]
