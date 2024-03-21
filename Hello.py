@@ -7,10 +7,13 @@ import matplotlib.pyplot as plt
 plt.style.use('dark_background')
 
 # Tytuł aplikacji
-st.title('Generator mocy obliczeniowej KCS')
+st.title('Kalkulator opłacalności spalania KCS')
 
 # Dodajemy komentarz
-st.markdown("Wartości mocy są przykładowe. Wpisz swoje ze strony Burningdropa: 0 dla podstawy, i wszystkie kolejne.")
+st.markdown("""
+Poniższe wartości mocy są przykładowe.<br>
+Wprowadź własne ze strony Burningdropa: 0 dla podstawowy, i kolejne jak na stronie.
+""", unsafe_allow_html=True)
 
 # Prepare initial data as lists ensuring they are the same length
 spalone_kcs = [0, 1.4, 1.6, 1.8, 2, 2.2, 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6, 3.8, 4, 4.2, 4.4, 4.6, 4.8, 5, 5.2, 5.4, 5.6, 5.8, 6, 6.2]
@@ -47,7 +50,6 @@ fig, ax = plt.subplots(figsize=(10, 6))
 ax.plot(df['Spalone KCS'], df['Wzrost mocy obliczeniowej'], marker='o', linestyle='-', color='orange')
 ax.set_xlabel('Spalone KCS')
 ax.set_ylabel('Wzrost mocy obliczeniowej')
-ax.set_title('Wykres wzrostu mocy obliczeniowej')
 ax.set_xticks(np.arange(min(spalone_kcs), max(spalone_kcs) + 0.2, 0.2))  # X-axis ticks
 
 # Y-axis grid lines with more precise scale
